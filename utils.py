@@ -175,7 +175,6 @@ def plot_mode_histogram(data, modes, test):
 
         for jj in range(num_classes):
             h, _ = np.histogram(data[jj*ptr:(jj+1)*ptr,j], bins=xbin)
-#            h, _ = np.histogram(data[j, modes], bins=xbin)
             ax.plot(np.linspace(-0.1, 0.1, 20), h)
             ax.set_ylabel('Mode '+ str(modes[j]))
 
